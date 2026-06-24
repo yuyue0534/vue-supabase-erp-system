@@ -15,32 +15,32 @@ export const componentMap = {
   'base/ProductCategory': () => import('@/views/base/ProductCategory.vue'),
   'base/ProductManage': () => import('@/views/base/ProductManage.vue'),
 
-  'purchase/PurchaseOrder': placeholder,
-  'purchase/PurchaseReceipt': placeholder,
-  'purchase/PurchaseReturn': placeholder,
-  'purchase/PurchaseStatement': placeholder,
+  'purchase/PurchaseOrder': () => import('@/views/purchase/PurchaseOrder.vue'),
+  'purchase/PurchaseReceipt': () => import('@/views/purchase/PurchaseReceipt.vue'),
+  'purchase/PurchaseReturn': () => import('@/views/purchase/PurchaseReturn.vue'),
+  'purchase/PurchaseStatement': () => import('@/views/purchase/PurchaseStatement.vue'),
 
-  'sales/SalesOrder': placeholder,
-  'sales/SalesDelivery': placeholder,
-  'sales/SalesReturn': placeholder,
-  'sales/SalesStatement': placeholder,
+  'sales/SalesOrder': () => import('@/views/sales/SalesOrder.vue'),
+  'sales/SalesDelivery': () => import('@/views/sales/SalesDelivery.vue'),
+  'sales/SalesReturn': () => import('@/views/sales/SalesReturn.vue'),
+  'sales/SalesStatement': () => import('@/views/sales/SalesStatement.vue'),
 
-  'inventory/StockQuery': placeholder,
-  'inventory/StockAdjust': placeholder,
-  'inventory/StockTake': placeholder,
-  'inventory/StockTransfer': placeholder,
-  'inventory/StockFlow': placeholder,
+  'inventory/StockQuery': () => import('@/views/inventory/StockQuery.vue'),
+  'inventory/StockAdjust': () => import('@/views/inventory/StockAdjust.vue'),
+  'inventory/StockTake': () => import('@/views/inventory/StockTake.vue'),
+  'inventory/StockTransfer': () => import('@/views/inventory/StockTransfer.vue'),
+  'inventory/StockFlow': () => import('@/views/inventory/StockFlow.vue'),
 
-  'finance/Receivable': placeholder,
-  'finance/Payable': placeholder,
-  'finance/ReceiptVoucher': placeholder,
-  'finance/PaymentVoucher': placeholder,
-  'finance/Expense': placeholder,
+  'finance/Receivable': () => import('@/views/finance/Receivable.vue'),
+  'finance/Payable': () => import('@/views/finance/Payable.vue'),
+  'finance/ReceiptVoucher': () => import('@/views/finance/ReceiptVoucher.vue'),
+  'finance/PaymentVoucher': () => import('@/views/finance/PaymentVoucher.vue'),
+  'finance/Expense': () => import('@/views/finance/Expense.vue'),
 
-  'report/SalesReport': placeholder,
-  'report/PurchaseReport': placeholder,
-  'report/InventoryReport': placeholder,
-  'report/FinanceReport': placeholder
+  'report/SalesReport': () => import('@/views/report/SalesReport.vue'),
+  'report/PurchaseReport': () => import('@/views/report/PurchaseReport.vue'),
+  'report/InventoryReport': () => import('@/views/report/InventoryReport.vue'),
+  'report/FinanceReport': () => import('@/views/report/FinanceReport.vue')
 }
 
 export function resolveMenuComponent(componentPath) {

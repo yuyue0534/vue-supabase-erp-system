@@ -64,7 +64,7 @@ function showNotifications() {
 
 async function handleCommand(command) {
   if (command === 'profile') {
-    ElMessage.info('个人资料页将在系统管理模块完成后提供。')
+    router.push('/profile')
     return
   }
 

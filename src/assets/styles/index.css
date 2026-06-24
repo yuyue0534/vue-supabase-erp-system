@@ -15,12 +15,12 @@ body,
 #app {
   width: 100%;
   min-width: 320px;
-  min-height: 100%;
+  height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
-  min-height: 100vh;
   background: #f5f7fa;
 }
 
@@ -36,15 +36,24 @@ select {
 }
 
 .app-shell {
-  min-height: 100vh;
   background: #f5f7fa;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .app-shell__main {
+  height: 100%;
   min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .app-shell__content {
+  min-height: 0;
+  flex: 1 1 auto;
   position: relative;
   padding: 20px;
   overflow: auto;
@@ -60,7 +69,8 @@ select {
 
 .app-sidebar {
   width: 240px;
-  min-height: 100vh;
+  height: 100%;
+  min-height: 0;
   flex: 0 0 240px;
   overflow: hidden;
   background: linear-gradient(180deg, #102a43 0%, #071a2c 100%);
@@ -104,7 +114,7 @@ select {
 }
 
 .app-sidebar__scrollbar {
-  height: calc(100vh - 64px);
+  height: calc(100% - 64px);
 }
 
 .app-sidebar .el-menu {
@@ -137,8 +147,12 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
   min-height: 64px;
+  flex: 0 0 64px;
   padding: 0 20px;
+  position: relative;
+  z-index: 10;
   background: #fff;
   border-bottom: 1px solid #edf0f4;
 }

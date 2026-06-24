@@ -39,6 +39,16 @@ const router = createRouter({
             permission: null,
             menuCode: 'dashboard'
           }
+        },
+        {
+          path: '/profile',
+          name: 'Profile',
+          component: () => import('@/views/profile/ProfileView.vue'),
+          meta: {
+            title: '个人资料',
+            hidden: true,
+            requiresAuth: true
+          }
         }
       ]
     },

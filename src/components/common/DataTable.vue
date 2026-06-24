@@ -9,7 +9,7 @@
             <el-button :icon="Setting">列设置</el-button>
           </template>
           <el-checkbox-group v-model="checkedColumns" class="data-table-card__column-setting">
-            <el-checkbox v-for="column in normalColumns" :key="column.prop" :label="column.prop">
+            <el-checkbox v-for="column in normalColumns" :key="column.prop" :value="column.prop">
               {{ column.label }}
             </el-checkbox>
           </el-checkbox-group>
